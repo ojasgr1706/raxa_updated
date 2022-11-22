@@ -1,0 +1,51 @@
+This directory is made to create a dataset containing all numerical values and words/CD grades from the database, only for the patient having a record in Anonymized_CCI-CD.csv and make a line per POD which is in the database so that it can be used to predict CD knowing only the past at a certain date
+
+The main file is prepare_data_frame.py, it can run: python prepare_data_frame.py
+Make sure that you modify the parameters in:
+    - prepare_data_frame.py : pathToCCIs, resultsDirectory, version
+    - makeTodo.py : pathToCCIs, all parameters to connect to the database (that contains the table: "obs")
+
+It takes about 30min on my laptop
+
+
+————————————————————
+
+
+A second main file is fromDictToCD.py which is meant to use the dictionary (in the code or sayed in a file. It builds a summary of the info we can extract from the database knowing the dictionary
+
+
+————————————————————
+
+
+
+Columns in the main dataframes:
+
+-CD (or trueCD): real CD coming from the anonymized file
+- maxCD: the maximum of the CD grade we have found USING THE DICTIONNARY.
+- CDN (CD numeric) : is meant to make the CD more linear:
+		 CD : CDN
+		- 0 : 0
+		- I : 1
+		- II : 2
+		- IIIa : 3
+		- IIIb : 4
+		- IVa : 5
+		- IVb : 6
+		- V : 7
+- maxCDN: the CDN corresponding to the maxCD found
+- surgeryDate: the latest surgery date found
+- allSurgeriesDates: date of possible surgeries based on POD0 infos and confirmed using all POD available (correcting mistakes in counts)
+- words: a structure:
+	list( 
+		tuple(
+			CD_grade,
+			dictionary_word_found,
+			list(
+				tuple( date_of_obs, POD )
+				)
+			)
+		)
+		
+
+
+

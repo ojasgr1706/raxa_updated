@@ -1,0 +1,12 @@
+/home/ojas/Desktop/sem7/btp/raxa/human-in-the-loop/SRIArchive/5.SRIChahalCode/sri_raxa/source/serverNew.py:451: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if x is None or str(x) is 'nan':
+/home/ojas/Desktop/sem7/btp/raxa/human-in-the-loop/SRIArchive/5.SRIChahalCode/sri_raxa/source/serverNew.py:466: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if x is None or str(x) is 'nan':
+/home/ojas/Desktop/sem7/btp/raxa/human-in-the-loop/SRIArchive/5.SRIChahalCode/sri_raxa/source/serverNew.py:479: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if x is None or str(x) is 'nan':
+Traceback (most recent call last):
+  File "/home/ojas/Desktop/sem7/btp/raxa/human-in-the-loop/SRIArchive/5.SRIChahalCode/sri_raxa/source/serverNew.py", line 4, in <module>
+    from prediction_splitted import *
+  File "/home/ojas/Desktop/sem7/btp/raxa/human-in-the-loop/SRIArchive/5.SRIChahalCode/sri_raxa/source/prediction_splitted.py", line 3, in <module>
+    from sklearn.preprocessing import Imputer
+ImportError: cannot import name 'Imputer' from 'sklearn.preprocessing' (/home/ojas/.local/lib/python3.10/site-packages/sklearn/preprocessing/__init__.py)

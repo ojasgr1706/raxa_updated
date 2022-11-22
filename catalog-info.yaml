@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: human-in-the-loop
+  annotations:
+    github.com/project-slug: Raxa/human-in-the-loop
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: other
+  lifecycle: unknown
+  owner: raxapedia-human-in-the-loop

@@ -1,0 +1,18 @@
+drain 300 PJ 25
+POD 4 WHIPPLES PROCEDURE
+PR 90 BP 98/68
+Plan start trial feed TODAY
+ISSUE on dopa(5ml/hr) cause low urine output and low BP
+INPUT 1800 UOP 800
+RT 10o
+Assessment; in morning patient BP was 98/78 for which dopa 5ml per hour, drainamylase 7, serum amylase 5
+STABLE
+T TUBE 100ML
+PR 90 BP 98/68
+drain 150 PJ nil
+INPUT 1500 UOP 650
+ISSUE on dopa(3ml/hr) cause low urine output and low BP
+T TUBE 100ML
+RT clamped
+POD 4 WHIPPLES PROCEDURE
+STABLE

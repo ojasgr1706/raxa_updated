@@ -1,0 +1,8 @@
+site_name: "Raxapedia-Human-In-The-Loop-TechDocs"
+site_description: "Documentation of Raxapedia Human In The Loop code"
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core

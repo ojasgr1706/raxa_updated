@@ -1,0 +1,11 @@
+scikit-learn
+mysql
+requests
+flask
+mysql-connector-python
+Json2xml
+dicttoxml
+bs4
+
+
+#Run below command for installing the dependencies:  sudo pip3 install -r requirements.txt

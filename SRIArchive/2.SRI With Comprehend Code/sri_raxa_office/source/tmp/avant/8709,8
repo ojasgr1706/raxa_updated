@@ -1,0 +1,8 @@
+pr 100
+drains minimal
+uop 1100ml
+input 1500
+rt 100ml
+bp 120/70
+stable
+pod 1 of bowel reconnection

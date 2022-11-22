@@ -1,0 +1,44 @@
+
+./
+    DoPatientId.xlsx # 8 Reg no. of patients not matching the database
+    raxaPatientIdandRegistrationNumberMapping.csv #reg no -> patient id
+    toBeReviewed.csv # TODO, see what is wrong with the CD
+    fromRaxa/ # empty
+    source/ # python code
+    old/ # old files
+
+./old:
+    Normal value.xlsx #file sri filled with normal values of some features
+    Patient_not_found.csv #all the patients not found
+    Patient_not_found.xlsx #idem
+    newPatientNotMatching.csv
+    toBeReviewed_old.xlsx
+    updated_credential.txt #x
+
+./source:
+    splitting by POD/
+          KVExtractor.py # key value extractor
+          README
+          dictionnary.py #dictionnary <word,CD>
+          makeTodo.py #create the dataframe, base of the algo
+          res/
+                8.csv
+                8.pckl
+                extractionText.csv
+                resDic.csv
+          toolsTodoSummedUp.py #tools of the algo
+          LICENSE
+          csv2arff.py #converter
+          fromDictToCD.py # do the part of the dictionnary only
+          onTodo.py #works on the todo dataframe
+          splittingPOD.py  #main file of the algo
+    uploadNotFound.py  #upload in a table
+    withcTakes/
+          160250-4-ctakes.py  #do the part of extracting obs from the db and going through cTakes
+          Tools.py
+          analysed/   #res of the algo per obs    / not to be touched
+          bagOfWords.csv
+          bagOfWords.xlsx
+          beforeCtakes/    # obs directly in file  / not to be touched
+          resCtakes/       # res of ctakes / not to be touched
+          toDoCtakes.xml   #example of ctakes pipeline (for Robin)
